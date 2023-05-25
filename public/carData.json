@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "brand": "Bugatti",
+      "model": "Chiron",
+      "price": "$3,000,000",
+      "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Lamborghini",
+      "model": "Veneno",
+      "price": "$4,500,000",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?resize=480:*"
+    },
+    {
+      "id": 3,
+      "brand": "Rolls-Royce",
+      "model": "Sweptail",
+      "price": "$13,000,000",
+      "img": "https://www.rolls-roycemotorcarsranchomirage.com/static/dealer-12176/2023-Rolls-Royce-Phantom-Series-II25.jpeg"
+    },
+    {
+      "id": 4,
+      "brand": "Koenigsegg",
+      "model": "CCXR Trevita",
+      "price": "$4,800,000",
+      "img": "https://www.ctvnews.ca/polopoly_fs/1.3310331.1488582927!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "Ferrari",
+      "model": "LaFerrari",
+      "price": "$2,700,000",
+      "img": "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_360,q_auto:best,w_640/v1/cms/uploads/bqzgolxjiyscpew3l02p"
+    },
+    {
+      "id": 6,
+      "brand": "Pagani",
+      "model": "Huayra BC",
+      "price": "$2,800,000",
+      "img": "https://luxuryinvestmentmagazine.com/wp-content/uploads/2022/09/pagani_utopia_luxury_investment_magazine.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "McLaren",
+      "model": "P1 LM",
+      "price": "$3,700,000",
+      "img": "https://mclaren.scene7.com/is/image/mclaren/New-GT-tile-poised-ready-1200x1200:crop-4x3?wid=1920&hei=1440"
+    },
+    {
+      "id": 8,
+      "brand": "Aston Martin",
+      "model": "Valkyrie",
+      "price": "$3,200,000",
+      "img": "https://eu.cdn.autosonshow.tv/4794/dslrimporter/GN71WHL/ASTON_MARTIN__SPEEDSTER__V12__PETROL__GREEN__2021__GN71WHL-e01_md.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "Porsche",
+      "model": "918 Spyder",
+      "price": "$1,700,000",
+      "img": "https://paultan.org/image/2021/05/2021-Porsche-Taycan-4S-Malaysia_Ext-2.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Bentley",
+      "model": "Bentayga",
+      "price": "$245,000",
+      "img": "https://imgd.aeplcdn.com/1200x900/cw/ec/40239/Bentley-Continental-GT-Exterior-158571.jpg?wm=0&q=75"
+    }
+  ]
+  
