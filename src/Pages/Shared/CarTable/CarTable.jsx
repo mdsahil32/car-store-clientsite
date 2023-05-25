@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CarTable = ({item}) => {
-console.log(item);
+// console.log(item);
     return (
         <>
            <div className='overflow-hidden relative transition duration-200 transform hover:-translate-y-2 '> 
