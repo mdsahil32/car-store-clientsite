@@ -5,7 +5,7 @@ import CarTable from '../../Shared/CarTable/CarTable';
 const ExpensiveCar = () => {
     const [data, setData] = useState([])
     useEffect(()=>{
-        fetch('carData.json')
+        fetch('http://localhost:5000/expensiveCar')
         .then(res => res.json())
         .then(data => {
             setData(data);
@@ -14,7 +14,7 @@ const ExpensiveCar = () => {
     return (
         <div>
             <Title subTitle='best collection' title='expensive & brand new car'></Title>
-                <div className='grid grid-cols-5 text-center my-8 gap-5'>
+                <div className='grid md:grid-cols-5 grid-cols-2 text-center my-8 gap-5'>
                     {
                         data.map(item => <CarTable 
                             key={item.id}

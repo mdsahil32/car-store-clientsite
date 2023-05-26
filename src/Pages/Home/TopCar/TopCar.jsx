@@ -15,7 +15,7 @@ const TopCar = () => {
     },[])
 
     return (
-        <div className='my-24'>
+        <div className='my-32'>
             <div className='my-8'>
                 <Title
                     subTitle='Check It'
