@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "brand": "AUDI",
+        "model": "Chiron",
+        "price": "$3,000,000",
+        "color": "Black",
+        "img": "https://i.ytimg.com/vi/3Sx4jE4JGNs/maxresdefault.jpg"
+      },
+      {
+        "id": 2,
+        "brand": "BMW",
+        "model": "Veneno",
+        "price": "$4,500,000",
+        "color": "Blue",
+        "img": "https://imgd.aeplcdn.com/0x0/n/cw/ec/47278/bmw-m8-right-front-three-quarter15.jpeg"
+      },
+      {
+        "id": 3,
+        "brand": "MARCEDES",
+        "model": "Sweptail",
+        "price": "$13,000,000",
+        "color": "Cyan",
+        "img": "https://media.ed.edmunds-media.com/mercedes-benz/s-class/2023/oem/2023_mercedes-benz_s-class_sedan_s-580e-4matic_fq_oem_1_1280.jpg"
+      },
+      {
+        "id": 4,
+        "brand": "TESLA",
+        "model": "CCXR Trevita",
+        "price": "$4,800,000",
+        "color": "White",
+        "img": "https://images.hgmsites.net/hug/tesla_100179532_h.jpg"
+      }
+]

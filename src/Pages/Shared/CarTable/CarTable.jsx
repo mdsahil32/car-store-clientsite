@@ -9,7 +9,7 @@ const CarTable = ({item}) => {
             <h3 className='text-xl uppercase'>{item?.brand}</h3>
 
             <div className='bg-black px-6 py-4 bg-opacity-60 opacity-0 hover:opacity-100 text-white absolute inset-0 transition-opacity duration-200 w-full h-32 rounded-full'>
-                <h3>See {item.brand} More Model </h3>
+                <h3>See More {item.brand}  Model </h3>
             </div>
             </div>    
         </>
