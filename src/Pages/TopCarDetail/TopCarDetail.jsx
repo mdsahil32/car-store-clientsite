@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Contact from '../Shared/Contact/Contact';
 
 const TopCarDetail = () => {
     const carData = useLoaderData()
@@ -16,7 +17,7 @@ const TopCarDetail = () => {
                     <h3>Car Price: ${price}</h3>
                 </div>
             </div>
-
+            <Contact></Contact>
         </>
     );
 };

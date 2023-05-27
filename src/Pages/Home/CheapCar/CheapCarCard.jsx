@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CheapCarCard = ({ car }) => {
-    const {image, make, price, model} = car
+    const {_id,image, make, price, model} = car
     return (
         <>
         <div className="card w-full bg-base-100 shadow-xl">
@@ -13,7 +14,7 @@ const CheapCarCard = ({ car }) => {
                 </h2>
                     <h2>Price: ${price}</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, amet. Cumque, dolor.</p>
-                
+                <p className='text-blue-700 underline mx-auto'><Link to={`/cheapCarDetail/${_id}`}>See more</Link></p>
             </div>
         </div>
         </>

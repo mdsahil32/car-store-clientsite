@@ -14,7 +14,7 @@ const CheapCar = () => {
     return (
         <div className='my-32'>
             <Title subTitle='Portable Check It' title='Less Or Cheap Car'></Title>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-8'>
+            <div className='grid md:grid-cols-3 grid-cols-1 gap-8' id='CheapCar'>
                 {
                     cars.map(car => <CheapCarCard
                         key={car._id}

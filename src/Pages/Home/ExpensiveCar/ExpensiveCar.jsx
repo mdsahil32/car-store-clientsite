@@ -12,7 +12,7 @@ const ExpensiveCar = () => {
         })
     },[])
     return (
-        <div>
+        <div id='ExpensiveCar'>
             <Title subTitle='best collection' title='expensive & brand new car'></Title>
                 <div className='grid md:grid-cols-5 grid-cols-2 text-center my-8 gap-5'>
                     {
