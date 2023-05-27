@@ -26,7 +26,7 @@ import CheapCarDetail from "../Pages/CheapCarDetail/CheapCarDetail";
         },
         {
           path: 'cheapCarDetail/:id',
-          element: <CheapCarDetail></CheapCarDetail>,
+          element: <PrivateRoute><CheapCarDetail></CheapCarDetail></PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:5000/cheapCar/${params.id}`)
         },
         {

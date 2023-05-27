@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -33,7 +33,9 @@ const CheapCarDetail = () => {
                     <h3 className='text-xl'>Price: {price}</h3>
                 </div>
             </div>
-            <p className='underline'>Back to home</p>
+            <Link to='/'>
+            <p  className='underline'>Back to home</p>
+            </Link>
         </>
     );
 };
