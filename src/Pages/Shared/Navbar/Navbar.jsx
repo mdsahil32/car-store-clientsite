@@ -13,22 +13,28 @@ const Navbar = () => {
 
     const navOptions = <>
         <li><Link to='/'>Home</Link></li>
-        <li><a href='#TopCar' >Top Car</a></li>
+        <li><Link to='/bookingCar'>Booking Car</Link></li>
         <li><a href='#ExpensiveCar' >Expensive Car</a></li>
         <li><a href='#CheapCar' >Cheap Car</a></li>
-        {user ?
-            <>
+        {
+            user ? <>
                 <li><Link onClick={handleLogout}>Logout</Link></li>
-                <img className='w-1/12 rounded-full' src={user.photoURL} alt="" />
+                <div className="dropdown dropdown-bottom dropdown-end">
+                    <label tabIndex={0}><Link><img src={user?.photoURL} className='w-12 rounded-full' alt="" /></Link></label>
+                    <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-center mx-auto">
+                    <img src={user?.photoURL} className='mx-auto w-32 rounded-full' alt="" />
+                        <li className='mx-auto text-xl'>{user?.displayName}</li>
+                        <li><Link to='/profile' className='my-2 bg-blue-600 mx-auto'>View Profile</Link></li>
+                    </ul>
+                </div>
             </>
-            : <li><Link to='/login'>Login</Link></li>
-
+                : <li><Link to='/login'>Login</Link></li>
         }
 
     </>
 
     return (
-        <div className="navbar fixed  z-10 max-w-screen-lg bg-gradient-to-r from-cyan-500 to-blue-500  text-black">
+        <div className="navbar max-w-screen-lg bg-gradient-to-r from-cyan-500 to-blue-500  text-black">
             <div className="navbar-center">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

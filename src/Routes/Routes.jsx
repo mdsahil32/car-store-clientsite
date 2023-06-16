@@ -8,6 +8,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import CheapCarDetail from "../Pages/CheapCarDetail/CheapCarDetail";
+import YourProfile from "../Pages/YourProfile/YourProfile";
+import BookingCar from "../Pages/BookingCar/BookingCar";
 
 
   const router = createBrowserRouter([
@@ -36,6 +38,14 @@ import CheapCarDetail from "../Pages/CheapCarDetail/CheapCarDetail";
         {
           path: 'register',
           element: <Register></Register>
+        },
+        {
+          path: 'profile',
+          element: <YourProfile></YourProfile>
+        },
+        {
+          path: 'bookingCar',
+          element: <BookingCar></BookingCar>
         }
       ]
     },

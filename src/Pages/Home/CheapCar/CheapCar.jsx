@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import CheapCarCard from './CheapCarCard';
 import Title from '../../Shared/Title/Title';
+import axios from 'axios';
 
 const CheapCar = () => {
     const [cars, setCars] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/cheapCar')
-            .then(res => res.json())
-            .then(data => {
-                setCars(data);
-            })
+        // fetch('/cheapCar')
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         setCars(data);
+        //     })
+        const url = "/cheapCar"
+        axios.get(url).then(res => {
+            setCars(res.data);
+        })
     }, [])
     return (
         <div className='my-32'>
             <Title subTitle='Portable Check It' title='Less Or Cheap Car'></Title>
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-8' id='CheapCar'>
+            <div className='grid md:grid-cols-4 grid-cols-1 gap-8 ' id='CheapCar'>
                 {
                     cars.map(car => <CheapCarCard
                         key={car._id}

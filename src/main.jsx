@@ -5,6 +5,9 @@ import './index.css'
 import router from './Routes/Routes.jsx'
 import { RouterProvider } from 'react-router-dom'
 import AuthProvider from './provider/AuthProvider.jsx'
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:5000";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

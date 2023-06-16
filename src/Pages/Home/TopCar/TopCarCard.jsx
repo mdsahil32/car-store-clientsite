@@ -5,7 +5,7 @@ const TopCarCard = ({ car }) => {
     const { _id, img, brand } = car
     return (
         <Link to={`/topCarDetail/${_id}`}>
-            <div className="card h-96  bg-base-100 shadow-lg hover:border-4  ">
+            <div className="card h-96  bg-base-100 shadow-lg hover:border-4 ">
                 <div className="card-body text-center bg-white ">
                     <h2 className="card-title mx-auto border-b-4">{brand}</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium maxime dicta quis in perspiciatis!</p>

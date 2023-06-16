@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 
 const Register = () => {
     const [error, setError] = useState('')
-    const {createUser, updateUserProfile} = useContext(AuthContext)
+    const { createUser, updateUserProfile } = useContext(AuthContext)
     const navigate = useNavigate()
     const handleRegister = event => {
         event.preventDefault()
@@ -15,34 +15,34 @@ const Register = () => {
         const email = form.email.value
         const password = form.password.value
         // console.log(email, password);
-setError('')
+        setError('')
         createUser(email, password)
-        .then(result => {
-            const logged = result.user;
-            console.log(logged);
-            Swal.fire('Your Account Create Successfully')
-            navigate('/')
-            updateUserProfile(name, photo)
-            .then(() => {
-                // console.log('user profile update');
-              }).catch((error) => {
-              setError(error.message)
-              });
-        })
-        .catch(error => {
-            setError(error.message);
-        })
+            .then(result => {
+                const logged = result.user;
+                console.log(logged);
+                Swal.fire('Your Account Create Successfully')
+                navigate('/')
+                updateUserProfile(name, photo)
+                    .then(() => {
+                        // console.log('user profile update');
+                    }).catch((error) => {
+                        setError(error.message)
+                    });
+            })
+            .catch(error => {
+                setError(error.message);
+            })
         form.reset()
-        
+
     }
     return (
         <>
-            <div className="hero min-h-screen bg-base-300">
-                <div className="hero-content flex-col">
-                    <div className="text-center ">
+            <div className="hero min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500">
+                <div className="hero-content flex-col my-12">
+                    <div className="text-center">
                         <h1 className="text-5xl font-bold mt-4">Register now!</h1>
                     </div>
-                    <form onSubmit={handleRegister} className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <form onSubmit={handleRegister} className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100 w-full">
                         <div className="card-body">
                             <div className="form-control">
                                 <label className="label">
@@ -72,7 +72,7 @@ setError('')
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn bg-blue-700 border-0" type="submit" value="Register" />
+                                <input className="btn  bg-gradient-to-r from-cyan-500 to-blue-500 border-0" type="submit" value="Register" />
                             </div>
                             <p className='text-red-600'><small>{error}</small></p>
                         </div>

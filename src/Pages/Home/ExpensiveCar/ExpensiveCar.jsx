@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Title from '../../Shared/Title/Title';
 import CarTable from '../../Shared/CarTable/CarTable';
+import axios from 'axios';
 
 const ExpensiveCar = () => {
     const [data, setData] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/expensiveCar')
-        .then(res => res.json())
-        .then(data => {
-            setData(data);
+        // fetch('/expensiveCar')
+        // .then(res => res.json())
+        // .then(data => {
+        //     setData(data);
+        // })
+        const url = "/expensiveCar"
+        axios.get(url).then(res => {
+            setData(res.data)
         })
     },[])
     return (

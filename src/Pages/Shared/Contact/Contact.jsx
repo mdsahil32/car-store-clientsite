@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
     return (
-        <div className='md:flex bg-blue-500 my-24 '>
+        <div className='md:flex bg-gradient-to-r from-cyan-500 to-blue-500 my-24 '>
             <div className='px-12 md:py-24'>
                 <h2 className='text-4xl font-semibold pb-4'>Contact With Us</h2>
                 <p><small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi.</small></p>
