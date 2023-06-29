@@ -7,7 +7,7 @@ import { RouterProvider } from 'react-router-dom'
 import AuthProvider from './provider/AuthProvider.jsx'
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://car-store-server-mu.vercel.app";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

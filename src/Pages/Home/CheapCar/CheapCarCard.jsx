@@ -1,22 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaCalendarAlt, FaCar, FaRoad, } from 'react-icons/fa';
+
 
 const CheapCarCard = ({ car }) => {
-    const {_id,image, make, price, model} = car
+    const { _id, image, year, km, make, price, model } = car
     return (
         <>
-        <div className="card w-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-xl mt-8">
-            <figure><img className='h-60' src={image} alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">
-                    {make}!
-                </h2>
-                    <div className="badge badge-accent">model: {model}</div>
-                    <h2>Price: ${price}</h2>
-                <p>Lorem ipsum dolor sit,  elit. Fugiat, amet. Cumque, dolor.</p>
-                <p className='font-semibold underline mx-auto'><Link to={`/cheapCarDetail/${_id}`}>See more</Link></p>
-            </div>
-        </div>
+            <Link to={`/cheapCarDetail/${_id}`}>
+                <div className="card w-full shadow-xl mt-8">
+                    <figure><img className='h-60' src={image} alt="" /></figure>
+                    <div className="card-body hover:bg-gray-300">
+                        <h2 className="flex items-center gap-1 card-title">
+                            <FaCar></FaCar> {make}
+                        </h2>
+                        <h2>Price: ${price}</h2>
+                        <p className='flex items-center gap-5'>
+                            <span className='flex items-center gap-1'><FaCalendarAlt></FaCalendarAlt>{year}</span>
+                            <span className='flex items-center gap-1'> <FaRoad></FaRoad>{km} Km</span>
+                        </p>
+                        <p className='font-semibold underline mx-auto'></p>
+                    </div>
+                </div>
+            </Link>
         </>
     );
 };

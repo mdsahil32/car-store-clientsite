@@ -6,36 +6,68 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
+import { FaCalendarAlt, FaRoad, FaCarBattery } from "react-icons/fa";
+import Contact from '../Shared/Contact/Contact';
+import { Helmet } from 'react-helmet';
 
 const CheapCarDetail = () => {
     const car = useLoaderData([])
-    const { _id, image, make, price, model } = car
+    const { _id, image, make, price, year, model, km } = car
     return (
         <>
-            <div className='md:flex  py-24'>
-                <div className='w-1/2  mr-4'>
-                    <Swiper
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-                        modules={[Pagination]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide><img src={image} alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={image} alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={image} alt="" /></SwiperSlide>
-                        
-                    </Swiper>
+            <Helmet>
+                <title>Car Store | cheap car detail</title>
+            </Helmet>
+            <h1 className='text-4xl mt-8 font-semibold underline'>{make}</h1>
+            <div className='md:flex justify-center items-center gap-5'>
+                <div className='w-1/3 bg-gray-200 p-20'>
+                    <h4 className='text-2xl uppercase mb-3'>Our Price: <span className='font-bold'>${price}</span></h4>
+                    <a href='#contact' className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  p-2 rounded'>Contact Information</a>
                 </div>
-                <div className='border-l-8 w-1/2 ps-8'>
-                    <h3 className='text-xl'>Brand: {make}</h3>
-                    <h3 className='text-xl'>Model: {model}</h3>
-                    <h3 className='text-xl'>Price: {price}</h3>
+                <div className='w-1/2 '>
+                    <div className=''>
+                        <Swiper
+                            pagination={{
+                                dynamicBullets: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide><img src={image} alt="" /></SwiperSlide>
+                            <SwiperSlide><img src={image} alt="" /></SwiperSlide>
+                            <SwiperSlide><img src={image} alt="" /></SwiperSlide>
+
+                        </Swiper>
+                    </div>
                 </div>
             </div>
-            <Link to='/'>
-            <p  className='underline'>Back to home</p>
-            </Link>
+
+            <div className='grid md:grid-cols-3 gap-6 mt-12 text-white'>
+                <div className='text-xl font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto px-24 py-6'>
+                    <span className='text-4xl text-center'><FaRoad></FaRoad></span>
+                    <span>Mileage</span>
+                    <br />
+                    <span>{km} km</span>
+                </div>
+
+                <div className='text-xl font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto px-24 py-6 text-center'>
+                    <span className='text-4xl text-center'><FaCalendarAlt></FaCalendarAlt></span>
+                    <span>Year</span>
+                    <br />
+                    <span>{year}</span>
+                </div>
+
+                <div className='text-xl font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto px-24 py-6'>
+                    <span className='text-4xl'>
+                        <FaCarBattery></FaCarBattery>
+                    </span>
+                    <span>0-60 mph</span>
+                    <br />
+                    <span>8.4s</span>
+                </div>
+            </div>
+            <Contact></Contact>
+            <p className='underline my-4 '><Link className='font-semibold text-xl' to='/'>Back To Home</Link></p>
         </>
     );
 };

@@ -8,10 +8,15 @@ import Reviews from '../Reviews/Reviews';
 import CheapCar from '../CheapCar/CheapCar';
 import ExtraSection from '../ExtraSection/ExtraSection';
 import Contact from '../../Shared/Contact/Contact';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
+
     return (
         <div>
+            <Helmet>
+                <title>Car Store | home</title>
+            </Helmet>
             <Banner></Banner>
             <TopCar></TopCar>
             <ExtraSection></ExtraSection>

@@ -24,12 +24,12 @@ import BookingCar from "../Pages/BookingCar/BookingCar";
         {
           path:'topCarDetail/:id',
           element:<PrivateRoute><TopCarDetail></TopCarDetail></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/topCar/${params.id}`)
+          loader: ({params}) => fetch(`https://car-store-server-mu.vercel.app/topCar/${params.id}`)
         },
         {
           path: 'cheapCarDetail/:id',
           element: <PrivateRoute><CheapCarDetail></CheapCarDetail></PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:5000/cheapCar/${params.id}`)
+          loader:({params}) => fetch(`https://car-store-server-mu.vercel.app/cheapCar/${params.id}`)
         },
         {
           path:'login',

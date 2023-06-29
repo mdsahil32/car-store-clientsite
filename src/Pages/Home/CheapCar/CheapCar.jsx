@@ -22,7 +22,7 @@ const CheapCar = () => {
             <div className='grid md:grid-cols-4 grid-cols-1 gap-8 ' id='CheapCar'>
                 {
                     cars.map(car => <CheapCarCard
-                        key={car._id}
+                        key={car.make}
                         car={car}
                     ></CheapCarCard>)
                 }
