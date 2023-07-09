@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TopCarCard = ({ car }) => {
+const  TopCarCard = ({ car }) => {
     const { _id, img, brand } = car
     return (
         <Link to={`/topCarDetail/${_id}`}>

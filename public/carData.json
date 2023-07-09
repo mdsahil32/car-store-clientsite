@@ -4,7 +4,49 @@
       "brand": "Bugatti",
       "model": "Chiron",
       "price": "$3,000,000",
-      "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg",
+      "bugatti": [
+        {
+            "model": "Chiron",
+            "manufacturer": "Bugatti",
+            "engine": "8.0 L quad-turbocharged W16",
+            "horsepower": 1479,
+            "top_speed": 261,
+            "acceleration": 2.4
+          },
+          {
+            "model": "Veyron Super Sport",
+            "manufacturer": "Bugatti",
+            "engine": "8.0 L quad-turbocharged W16",
+            "horsepower": 1183,
+            "top_speed": 268,
+            "acceleration": 2.5
+          },
+          {
+            "model": "Divo",
+            "manufacturer": "Bugatti",
+            "engine": "8.0 L quad-turbocharged W16",
+            "horsepower": 1479,
+            "top_speed": 236,
+            "acceleration": 2.4
+          },
+          {
+            "model": "Centodieci",
+            "manufacturer": "Bugatti",
+            "engine": "8.0 L quad-turbocharged W16",
+            "horsepower": 1578,
+            "top_speed": 236,
+            "acceleration": 2.4
+          },
+          {
+            "model": "La Voiture Noire",
+            "manufacturer": "Bugatti",
+            "engine": "8.0 L quad-turbocharged W16",
+            "horsepower": 1479,
+            "top_speed": 261,
+            "acceleration": 2.4
+          }      
+    ]
     },
     {
       "id": 2,
