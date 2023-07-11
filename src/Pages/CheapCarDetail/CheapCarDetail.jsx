@@ -9,10 +9,44 @@ import { Pagination } from "swiper";
 import { FaCalendarAlt, FaRoad, FaCarBattery } from "react-icons/fa";
 import Contact from '../Shared/Contact/Contact';
 import { Helmet } from 'react-helmet';
+import Swal from 'sweetalert2';
 
 const CheapCarDetail = () => {
     const car = useLoaderData([])
     const { _id, image, make, price, year, model, km } = car
+
+    const handleBooking = car => {
+        const bookingCar = {_id, image, make, price, year, model, km}
+        fetch('https://car-store-server-mdsahil32.vercel.app/bookingCar', {
+            method: 'POST', 
+            headers: {
+                'content-type': 'application/json'
+            }, 
+            body: JSON.stringify(bookingCar)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.insertedId) {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Car Booked',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Car Already Booked',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        })
+    }
+
     return (
         <>
             <Helmet>
@@ -23,6 +57,7 @@ const CheapCarDetail = () => {
                 <div className='w-1/3 bg-gray-200 p-20'>
                     <h4 className='text-2xl uppercase mb-3'>Our Price: <span className='font-bold'>${price}</span></h4>
                     <a href='#contact' className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  p-2 rounded'>Contact Information</a>
+                    <button onClick={() => handleBooking(car)} className='bg-gradient-to-r from-cyan-500 to-blue-500 my-3 p-2 rounded font-semibold'>Booking Now</button>
                 </div>
                 <div className='w-1/2 '>
                     <div className=''>

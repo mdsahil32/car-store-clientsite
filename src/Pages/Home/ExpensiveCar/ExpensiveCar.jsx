@@ -10,7 +10,7 @@ const ExpensiveCar = () => {
             .then(res => res.json())
             .then(data => {
                 setData(data);
-                console.log(data[0].bugatti);
+                // console.log(data[0].bugatti);
             })
         // const url = "/expensiveCar"
         // axios.get(url).then(res => {
