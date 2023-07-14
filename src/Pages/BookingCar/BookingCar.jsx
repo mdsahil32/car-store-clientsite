@@ -33,6 +33,8 @@ const BookingCar = () => {
                     key={car._id}
                     index={index}
                     car={car}
+                    bookingCars={bookingCars}
+                    setBookingCars={setBookingCars}
                     ></BookingCarTable>)}
                     
                 </tbody>

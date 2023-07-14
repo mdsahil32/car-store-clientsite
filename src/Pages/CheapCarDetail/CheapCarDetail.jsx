@@ -16,7 +16,7 @@ const CheapCarDetail = () => {
     const { _id, image, make, price, year, model, km } = car
 
     const handleBooking = car => {
-        const bookingCar = {_id, image, make, price, year, model, km}
+        const bookingCar = {carId:_id, image, make, price, year, model, km}
         fetch('https://car-store-server-mdsahil32.vercel.app/bookingCar', {
             method: 'POST', 
             headers: {
