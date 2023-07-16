@@ -13,6 +13,8 @@ const BugattiCard = ({ bugatti }) => {
                 </h2>
                 <p>Engine: {engine}</p>
                 <p>Horsepower: {horsepower}</p>
+                <p>Top Speed: {top_speed}</p>
+                <p>Acceleration: {acceleration}</p>
             </div>
         </div>
     );

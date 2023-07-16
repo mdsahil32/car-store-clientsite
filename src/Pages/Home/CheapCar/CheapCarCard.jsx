@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCalendarAlt, FaCar, FaRoad, } from 'react-icons/fa';
+import { FaCalendarAlt,  FaCarAlt, FaRoad, } from 'react-icons/fa';
 
 
 const CheapCarCard = ({ car }) => {
@@ -12,7 +12,7 @@ const CheapCarCard = ({ car }) => {
                     <figure><img className='h-60' src={image} alt="" /></figure>
                     <div className="card-body hover:bg-gray-300">
                         <h2 className="flex items-center gap-1 card-title">
-                            <FaCar></FaCar> {make}
+                            <FaCarAlt></FaCarAlt>{make}
                         </h2>
                         <h2>Price: ${price}</h2>
                         <p className='flex items-center gap-5'>

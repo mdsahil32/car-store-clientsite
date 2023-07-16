@@ -15,8 +15,8 @@ const BugattiCars = () => {
 
     return (
         <div className=''>
-            <h3 className='text-3xl font-semibold underline text-center my-8'>Bugatti Car collection</h3>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-12 justify-center'>
+            <h3 className='text-3xl font-semibold underline text-center my-8 uppercase'>Bugatti Car collection</h3>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-12 justify-center my-12'>
                 {
                     data.map(bugatti => <BugattiCard
                         key={bugatti.id}

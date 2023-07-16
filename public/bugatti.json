@@ -17,7 +17,7 @@
         "top_speed": 268,
         "acceleration": 2.5,
         "id":2,
-        "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bugatti_Veyron_Super_Sport_Retro_Classics_2020_IMG_0210.jpg"
       },
       {
         "model": "Divo",
@@ -27,7 +27,7 @@
         "top_speed": 236,
         "acceleration": 2.4,
         "id":3,
-        "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/16/Bugatti_Divo%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0029%29.jpg"
       },
       {
         "model": "Centodieci",
@@ -37,7 +37,7 @@
         "top_speed": 236,
         "acceleration": 2.4,
         "id":4,
-        "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+        "img": "https://supercarblondie.com/wp-content/uploads/final-Bugatti-Centodieci-feature-image.jpg"
       },
       {
         "model": "La Voiture Noire",
@@ -47,6 +47,6 @@
         "top_speed": 261,
         "acceleration": 2.4,
         "id":5,
-        "img": "https://i.ytimg.com/vi/CF-z_lSmqf4/maxresdefault.jpg"
+        "img": "https://s.aolcdn.com/commerce/blogcdn/slideshows/images/slides/753/655/1/S7536551/slug/l/bugatti-la-voiture-noire-1.jpg"
       }
 ]
