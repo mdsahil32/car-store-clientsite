@@ -1,19 +1,29 @@
-import axios from 'axios';
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import BugattiCard from './BugattiCard';
 
 const BugattiCars = () => {
-    const cars = useLoaderData()
-    const {_id, brand}= cars
+    const [data , setData] = useState([])
 
-    const url = "/bugattiCar"
-    axios.get(url).then(res =>{
-        // console.log(res.data);
-    })
+    useEffect(() =>{
+        fetch('bugatti.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            setData(data)
+        })
+    }, [])
 
     return (
-        <div>
-            <h1>{brand} Cars Collection </h1>
+        <div className=''>
+            <h3 className='text-3xl font-semibold underline text-center my-8'>Bugatti Car collection</h3>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-12 justify-center'>
+                {
+                    data.map(bugatti => <BugattiCard
+                        key={bugatti.id}
+                    bugatti={bugatti}
+                    ></BugattiCard>)
+                }
+            </div>
         </div>
     );
 };

@@ -11,7 +11,6 @@ import CheapCarDetail from "../Pages/CheapCarDetail/CheapCarDetail";
 import YourProfile from "../Pages/YourProfile/YourProfile";
 import BookingCar from "../Pages/BookingCar/BookingCar";
 import BugattiCars from "../Pages/BugattiCars/BugattiCars";
-import CarTable from "../Pages/Shared/CarTable/CarTable";
 
 
   const router = createBrowserRouter([
@@ -28,15 +27,13 @@ import CarTable from "../Pages/Shared/CarTable/CarTable";
           element:<PrivateRoute><TopCarDetail></TopCarDetail></PrivateRoute>,
           loader: ({params}) => fetch(`https://car-store-server-mu.vercel.app/topCar/${params.id}`)
         },
+        // expensive car collection ----------
         {
-          path: 'expensiveCar/:id',
+          path: 'bugatti',
           element: <BugattiCars></BugattiCars>,
-          loader: ({params}) => fetch(`https://car-store-server-mdsahil32.vercel.app/expensiveCar/${params.id}`)
         },
-        // {
-        //   path:'/bugattiCar',
-        //   element: <BugattiCars></BugattiCars>
-        // },
+        
+        // --------
         {
           path: 'cheapCarDetail/:id',
           element: <PrivateRoute><CheapCarDetail></CheapCarDetail></PrivateRoute>,
