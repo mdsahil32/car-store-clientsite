@@ -40,34 +40,34 @@ const Register = () => {
             <div className="hero min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500">
                 <div className="hero-content flex-col my-12">
                     <div className="text-center">
-                        <h1 className="text-5xl font-bold mt-4">Register now!</h1>
+                        <h1 className="text-5xl text-white font-bold mt-4">Register now!</h1>
                     </div>
-                    <form onSubmit={handleRegister} className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100 w-full">
+                    <form onSubmit={handleRegister} className="card flex-shrink-0  max-w-sm shadow-2xl bg-black bg-opacity-80 w-full">
                         <div className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">name</span>
+                                    <span className="label-text text-white">Name</span>
                                 </label>
                                 <input name='name' type="text" placeholder="name" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Photo Url</span>
+                                    <span className="label-text text-white">Photo Url</span>
                                 </label>
                                 <input name='photo' type="text" placeholder="photo url" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text text-white">Email</span>
                                 </label>
                                 <input name='email' type="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text text-white">Password</span>
                                 </label>
                                 <input name='password' type="password" placeholder="password" className="input input-bordered" required />
-                                <label className="label">
+                                <label className="label text-white">
                                     <p>Already have an account?? <Link className="text-blue-500" to='/login'>Login now</Link></p>
                                 </label>
                             </div>

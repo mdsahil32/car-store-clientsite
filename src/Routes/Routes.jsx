@@ -53,7 +53,7 @@ import BugattiCars from "../Pages/BugattiCars/BugattiCars";
         },
         {
           path: 'bookingCar',
-          element: <BookingCar></BookingCar>
+          element: <PrivateRoute><BookingCar></BookingCar></PrivateRoute>
         }
       ]
     },

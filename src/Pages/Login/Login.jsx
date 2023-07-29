@@ -30,25 +30,25 @@ const Login = () => {
     
     return (
         <>
-            <div className="hero min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500">
+            <div className="hero  min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
+                        <h1 className="text-5xl text-white font-bold">Login now!</h1>
                     </div>
-                    <form onSubmit={handleLogin} className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <div className="card-body">
-                            <div className="form-control">
+                    <form onSubmit={handleLogin} className="card flex-shrink-0 w-full  max-w-sm shadow-2xl bg-black bg-opacity-80">
+                        <div className="card-body ">
+                            <div className="form-control ">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text text-white">Email</span>
                                 </label>
                                 <input name='email' type="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text text-white">Password</span>
                                 </label>
                                 <input name='password' type="password" placeholder="password" className="input input-bordered" required />
-                                <label className="label">
+                                <label className="label text-white">
                                     <p>you are new to here? <Link className="text-blue-500" to='/register'>Register now</Link></p>
                                 </label>
                             </div>
