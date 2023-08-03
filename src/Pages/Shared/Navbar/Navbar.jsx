@@ -17,14 +17,7 @@ const Navbar = () => {
         {
             user ? <>
                 <li><Link onClick={handleLogout}>Logout</Link></li>
-                <div className="dropdown dropdown-bottom dropdown-end">
-                    <label tabIndex={0}><Link><img src={user?.photoURL} className='w-12 rounded-full' alt="" /></Link></label>
-                    <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-center mx-auto">
-                    <img src={user?.photoURL} className='mx-auto w-32 rounded-full' alt="" />
-                        <li className='mx-auto text-xl'>{user?.displayName}</li>
-                        <li><Link to='/profile' className='my-2 bg-blue-600 mx-auto'>View Profile</Link></li>
-                    </ul>
-                </div>
+                <li><Link to='/profile'><img className='rounded-full w-12' src={user?.photoURL} alt="" /></Link></li>
             </>
                 : <li><Link to='/login'>Login</Link></li>
         }

@@ -55,9 +55,9 @@ const CheapCarDetail = () => {
             <h1 className='text-4xl mt-8 font-semibold underline'>{make}</h1>
             <div className='md:flex justify-center items-center gap-5'>
                 <div className='w-1/3 bg-gray-200 p-20'>
-                    <h4 className='text-2xl uppercase mb-3'>Our Price: <span className='font-bold'>${price}</span></h4>
-                    <a href='#contact' className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  p-2 rounded'>Contact Information</a>
-                    <button onClick={() => handleBooking(car)} className='bg-gradient-to-r from-cyan-500 to-blue-500 my-3 p-2 rounded font-semibold'>Booking Now</button>
+                    <h4 className='text-2xl uppercase mb-3'>Our Car Price: <span className='font-bold'>${price}</span></h4>
+                    <a href='#contact' className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  p-2 rounded hover:text-white'>Contact Information</a>
+                    <button onClick={() => handleBooking(car)} className='bg-gradient-to-r from-cyan-500 to-blue-500  my-3 p-2 rounded font-semibold hover:text-white'>Booking Now</button>
                 </div>
                 <div className='w-1/2 '>
                     <div className=''>

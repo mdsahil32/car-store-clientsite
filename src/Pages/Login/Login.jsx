@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 const Login = () => {
     const [error, setError] = useState('')
-    const { signIn } = useContext(AuthContext)
+    const { signIn, signInWithGoogle } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
@@ -25,9 +25,18 @@ const Login = () => {
                 setError(error.message)
             })
         form.reset()
-
     }
-    
+    const handleGoogle = () => {
+        signInWithGoogle()
+        .then(result => {
+            const logged = result.user
+            navigate(from, { replace: true })
+        })
+        .catch(error => {
+            setError(error.message)
+        })
+    }
+
     return (
         <>
             <div className="hero  min-h-screen  bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -41,7 +50,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text text-white">Email</span>
                                 </label>
-                                <input name='email' type="email" placeholder="email" className="input input-bordered" required />
+                                <input name='email' type="email" placeholder="email" className="input input-bordered w-80" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -55,8 +64,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <input className="btn bg-gradient-to-r from-cyan-500 to-blue-500 border-0" type="submit" value="Login" />
                             </div>
-
-                          
+                            <button onClick={handleGoogle}>Google</button>
                             <p className='text-red-600'><small>{error}</small></p>
                         </div>
                     </form>
