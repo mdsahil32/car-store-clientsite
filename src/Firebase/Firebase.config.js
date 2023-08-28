@@ -5,14 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey,
-  authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
-  storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId
+  apiKey: "AIzaSyAMIxUsBE6uArrqVMwVL4NwjyKlIOr9GP4",
+  authDomain: "car-store-fb90e.firebaseapp.com",
+  projectId: "car-store-fb90e",
+  storageBucket: "car-store-fb90e.appspot.com",
+  messagingSenderId: "260145265337",
+  appId: "1:260145265337:web:4cdce76773d4b762d0b968"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export default app;
+export default app
